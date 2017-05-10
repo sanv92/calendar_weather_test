@@ -5,7 +5,7 @@
 	<title>Weather</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css?v=3.3.4">
+	<link rel="stylesheet" href="//getbootstrap.com/dist/css/bootstrap.min.css?v=3.3.4">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,7 +18,7 @@
 <% } %>
 <% if (lat && lon) { %>
 <p>
-	Geo coords: <a href="http://openweathermap.org/Maps?zoom=12&lat=<%- lat %>&lon=<%- lon %>&layers=B0FTTFF" target="blank">[ <%- lat %>, <%- lon %> ]</a>
+	Geo coords: <a href="//openweathermap.org/Maps?zoom=12&lat=<%- lat %>&lon=<%- lon %>&layers=B0FTTFF" target="blank">[ <%- lat %>, <%- lon %> ]</a>
 </p>
 <p id="selectedDate">Date: <%- selectedDate %></p>
 <% } %>
@@ -39,7 +39,7 @@
 <section class="col-xs-<%- col %>">
 	<figure>
 	<% if (item.weather.icon) { %>
-		<img class="img-responsive" src="http://openweathermap.org/img/w/<%- item.weather.icon %>.png">
+		<img class="img-responsive" src="//openweathermap.org/img/w/<%- item.weather.icon %>.png">
 		<h3><%- item.temp %> &deg;C</h3>
 		<h6><%- item.weather.text %></h6>
 	<% } %>
@@ -83,7 +83,7 @@
 <div id="page"></div>
 <a href="#" id="next" class="button btn btn-default navigation">Next day</a>
 
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="js/lib/underscore.js?v=1.7.0"></script>
 <script src="js/weather.js"></script>
 </body>
