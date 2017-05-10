@@ -1,0 +1,36 @@
+.page {
+	min-width: 996px
+}
+
+section figure {
+	height: 140px
+}
+
+section div.col-xs-2 {
+	margin-top: 140px
+}
+
+#home,
+#next {
+	position: fixed;
+	top: 2em;
+	margin-top: -17px;
+	z-index: 9999
+}
+#home {
+	left: 5px;
+}
+#next {
+	right: 5px;
+}
+
+section[role="main"] {
+	padding-top: 3em
+}
+
+section[role="main"] section ul li span {
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
